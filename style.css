@@ -1,0 +1,106 @@
+:root {
+    /*-- Colores --*/
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+
+    /*-- Medidas --*/
+    --border-radius: 1.5rem;
+    --border-radius-second: 0.5rem;
+    --box-shadow: 10px 10px 0px 0px #000000;
+    --max-width: 20rem;
+    --spacing: 1.25rem;
+
+    /*-- Fuente --*/
+    --font: 'Figtree', sans-serif;
+    --font-size-base: 1rem; /* 16px */
+    --font-weight-regular: 500;
+    --font-weight-bold: 800;
+  }
+  
+/*--- Estilos Base ---*/
+body {
+  font-family: var(--font);
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.contenedor {
+  max-width: var(--max-width);
+  margin: var(--spacing);
+  padding: var(--spacing);
+  background: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  border: var(--black) solid 1px;
+}
+@media (min-width: 90rem) { /* 1440px */
+    .contenedor {
+      max-width: 37.5rem; /* 600px */
+    }
+}
+
+/*--- Estilos de Card ---*/
+
+section img{
+    width: 100%;
+}
+.card-content{
+    margin-top: 1rem;
+    .tag {
+        background: var(--yellow);
+        color: var(--black);
+        border-radius: var(--border-radius-second);
+        font-weight: var();
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        font-weight: var(--font-weight-bold);
+        cursor: pointer;
+        display: block;
+        margin-bottom: 1rem;
+        transition: black 0.3s ease-in-out, color 0.4s ease-in-out;
+    }
+    .tag:hover {
+        background: var(--black);
+        color: var(--white);
+    }
+    .description{
+        color: var(--gray-500);
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+    
+    .title {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+    .title:hover{
+        color: var(--yellow);
+    }
+    .user{
+        display: flex;
+        img{
+            width: 2.5rem; /* 40px */
+            height: 2.5rem;
+            border-radius: 50%;
+        }
+        span{
+            font-size: 0.8rem;
+            font-weight: var(--font-weight-bold);
+            align-content: center;
+            margin: 1rem;
+        }
+    }
+  
+}
+
+footer{
+    margin: 5%;
+}
