@@ -25,14 +25,13 @@ body {
   font-family: var(--font);
   background: var(--yellow);
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 .contenedor {
-  max-width: var(--max-width);
   margin: var(--spacing);
   padding: var(--spacing);
   background: var(--white);
@@ -40,9 +39,10 @@ body {
   border-radius: var(--border-radius);
   border: var(--black) solid 1px;
 }
-@media (min-width: 90rem) { /* 1440px */
+
+@media (min-width: 400px) { 
     .contenedor {
-      max-width: 37.5rem; /* 600px */
+      width: var(--max-width); 
     }
 }
 
@@ -76,7 +76,6 @@ section img{
         font-size: 0.9rem;
         line-height: 1.3rem;
     }
-    
     .title {
         font-size: 1.2rem;
         font-weight: 800;
@@ -100,7 +99,6 @@ section img{
     }
   
 }
-
 footer{
     margin: 5%;
 }
