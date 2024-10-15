@@ -94,11 +94,11 @@ section img{
             font-size: 0.8rem;
             font-weight: var(--font-weight-bold);
             align-content: center;
-            margin: 1rem;
+            margin: 0 1rem;
         }
     }
   
 }
 footer{
-    margin: 5%;
+    margin: 2%;
 }
